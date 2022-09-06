@@ -181,18 +181,23 @@ body {
 
 }
 
+.project-card h4 {
+    text-transform: capitalize;
+}
+
 .card-content {
     padding: 1.5em 2em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1.5em;
+    height: 15em;
 }
 
 .card-content p {
     line-height: 1.5em;
     max-height: 6em;
     text-overflow: ellipsis;
-
     overflow: hidden;
 }
 
