@@ -1,0 +1,247 @@
+:root {
+    --brand-color: rgb(13, 86, 124);
+    --card-color: rgb(255, 255, 255);
+    --color: #ffffff;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: var(--color);
+    background-color: var(--brand-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+
+}
+.card {
+    padding: 0.5em 1em;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    text-shadow: 0 0 1px 0 rgba( 31, 38, 135, 0.37 )
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+}
+
+#sidebar-menu {
+     padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 2.5em;
+}
+
+#sidebar-menu li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+#sidebar-menu svg {
+    transform: scale(0.8);
+}
+
+#sidebar-menu hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 1.5em 0
+}
+
+#main-container {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    margin: 1em 2em 2em 4em;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+#search-box {
+    all: unset;
+    width: clamp(280px, 480px, 760px);
+    border-radius: 50px;
+    padding: 0.5em 1.5em;
+    background: rgba( 255, 255, 255, 0.2 );
+}
+
+#search-box:focus{
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.profile-image {
+
+    border-radius: 50%;
+    background: rgba( 255, 255, 255, 0.2 );
+    object-fit: cover;
+}
+
+
+#profile-section {
+    display: flex;
+    align-items: center;
+    gap: 2em
+}
+
+#greeting {
+    display: flex;
+    gap: 1.5em;
+}
+
+#greeting-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+#hello{
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+}
+
+#name {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+#button-group {
+    display: flex;
+    align-self: flex-end;
+    gap: 1em;
+}
+
+.menu-button {
+    all: unset;
+    padding: 0.5em 1em;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    text-shadow: 0 0 1px 0 rgba( 31, 38, 135, 0.37 );
+
+}
+
+.menu-button:hover {
+    transform: translateY(5%);
+    border: 1px solid rgba( 255, 255, 255, 0.5 );
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+#main-container hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 1.5em;
+}
+
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    margin: 1em 2em 2em 4em;
+}
+
+
+#project-grid {
+    width: 100%;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fill, calc(max(33%, 250px) - 1.5em));
+}
+
+.project-card {
+
+    border-radius: 10px;
+
+}
+
+.card-content {
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.card-content p {
+    line-height: 1.5em;
+    max-height: 6em;
+    text-overflow: ellipsis;
+
+    overflow: hidden;
+}
+
+.card-content h4 {
+    font-size: 1.5em;
+}
+
+.reactions {
+    display: flex;
+    width: 100%;
+    gap: 0.7em;
+    justify-content: flex-end;
+}
+
+#right-part {
+    height: 100%;
+    align-self: flex-start;
+}
+
+#right-part .card {
+    height: 100%;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+}
+
+#right-part h5 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#right-part hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section-title {
+    padding: 2em 0;
+}
+
+.trending-profile {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    margin: 0.5em 0
+}
+
+.handle {
+    font-weight: 200;
+}
